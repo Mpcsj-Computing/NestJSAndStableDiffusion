@@ -9,8 +9,6 @@ WORKDIR /app
 COPY package*.json ./
 COPY yarn.lock ./
 
-RUN npm i -g yarn
-
 # Install dependencies
 RUN yarn install
 
